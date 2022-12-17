@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import { Home } from "./pages/Home";
 import { Blog } from "./pages/Blog";
-import { Contact } from "./pages/Contact";
+import { Dashboard } from "./pages/Dashboard";
 import { NoPage } from "./pages/NoPage";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="blogs" element={<Blog />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="dashboard" element={<Dashboard />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

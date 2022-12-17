@@ -49,3 +49,8 @@
     }
   }
 }
+
+.active-nav-item {
+  color: var(--primary-text-color) !important;
+  text-decoration: underline !important;
+}

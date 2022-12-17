@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -10,13 +10,28 @@ export default function Navbar() {
         <nav className="top-bar-nav">
           <ul className="nav-items">
             <li>
-              <Link to="/">Home</Link>
+              <NavLink
+                className={({ isActive }) => (isActive ? "active-nav-item" : "")}
+                to="/"
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/blogs">Blogs</Link>
+              <NavLink
+                className={({ isActive }) => (isActive ? "active-nav-item" : "")}
+                to="/blogs"
+              >
+                Blogs
+              </NavLink>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <NavLink
+                className={({ isActive }) => (isActive ? "active-nav-item" : "")}
+                to="/dashboard"
+              >
+                Dashboard
+              </NavLink>
             </li>
           </ul>
         </nav>
